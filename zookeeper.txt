@@ -1,0 +1,11 @@
+ZK is primarily a data sync service with eventual strong constsitency.
+ZK cluster has set of key value manipulation commands.
+ZK has no notion of service discovery by design.
+ZK lack of service discovery leads to a wrapper solutions like apache curtor on top of it.
+ZK isn't meant to be used in cross data center scenarios.
+ZK has no inherent unerstanding of meaningful service healthchecks, like 200 OK or Memory Threshold, or Disk Space Utilization etc
+ZK clients are thick clients by design.
+ZK hasZAB + Heartbeats combination.
+ZK alternative like COnsul has Raft + Gossip combination that is proven in many modern clsuter technologies.
+
+https://data-flair.training/blogs/zookeeper-benefits-and-limitations/
